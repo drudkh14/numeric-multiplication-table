@@ -13,7 +13,7 @@ public class Project2 {
     private static final Logger logger = LoggerFactory.getLogger(Project2.class);
 
     public static void main(String[] args) {
-        logger.info("Starting Main.");
+        logger.info("Starting Main. Hello");
         Properties properties;
         try {
             properties = new PropertiesLoader(PROPERTIES_FILE).loadProperties();
