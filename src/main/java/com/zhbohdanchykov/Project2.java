@@ -24,6 +24,7 @@ public class Project2 {
         }
 
         NumericType type;
+        System.out.println(System.getProperty("type"));
         try {type = NumericType.fromString(System.getProperty("type", "integer"));
             logger.info("Got {} NumericType.", type);
         } catch (IllegalArgumentException e) {
