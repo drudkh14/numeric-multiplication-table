@@ -6,11 +6,11 @@ import org.slf4j.LoggerFactory;
 import java.io.IOException;
 import java.util.Properties;
 
-public class NumericMultiplicationTable {
+public class Project2 {
 
-    private static final String PROPERTIES_FILE = "numeric-multiplication-table.properties";
+    private static final String PROPERTIES_FILE = "project2.properties";
 
-    private static final Logger logger = LoggerFactory.getLogger(NumericMultiplicationTable.class);
+    private static final Logger logger = LoggerFactory.getLogger(Project2.class);
 
     public static void main(String[] args) {
         logger.info("Starting Main.");
@@ -24,8 +24,7 @@ public class NumericMultiplicationTable {
         }
 
         NumericType type;
-        try {
-            type = NumericType.fromString(System.getProperty("type", "integer"));
+        try {type = NumericType.fromString(System.getProperty("type", "integer"));
             logger.info("Got {} NumericType.", type);
         } catch (IllegalArgumentException e) {
             logger.error(String.valueOf(e));
